@@ -1,2 +1,2 @@
-# Minecraft Plugin - Capture the flag ish Thingy
-This is planned for the future. It is an idea for a plugin that adds some sort of capture the flag mechanics. Those will be added to a specific world, so that will also be uploaded at some point.
+# Wolkenplugin
+This is a small project of mine. It is a minecraft plugin for the newest version of minecraft spigot, which shall allow you to claim land and build cities with some twists.
