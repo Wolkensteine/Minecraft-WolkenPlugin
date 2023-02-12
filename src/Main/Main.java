@@ -1,11 +1,7 @@
 package Main;
 
-public class Main {
+public class Main extends JavaPlugins {
 
-	public static void main(String[] args) {
-		
-		
-		
-	}
+	
 
 }
