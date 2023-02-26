@@ -8,8 +8,11 @@ import org.bukkit.plugin.java.JavaPlugin;
 import Main.Listeners.BlockInteract;
 import Main.Listeners.Chat;
 import Main.Listeners.Lives;
+import Main.commands.ChatCommand;
 import Main.commands.CityCommand;
 import Main.commands.HomeCommand;
+import Main.commands.PartyCommand;
+import Main.commands.TeamCommand;
 
 public class Main extends JavaPlugin {
 
@@ -29,8 +32,11 @@ public class Main extends JavaPlugin {
 		getServer().getPluginManager().registerEvents(new Lives(), this);
 		
 		// Commands
-		getCommand("home").setExecutor(new HomeCommand());
+		getCommand("Home").setExecutor(new HomeCommand());
 		getCommand("City").setExecutor(new CityCommand());
+		getCommand("Team").setExecutor(new TeamCommand());
+		getCommand("Party").setExecutor(new PartyCommand());
+		getCommand("Chat").setExecutor(new ChatCommand());
 		
 		System.out.println("WolkenPlugin> Enabled.");
 	}
