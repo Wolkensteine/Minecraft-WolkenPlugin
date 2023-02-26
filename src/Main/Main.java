@@ -7,6 +7,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import Main.Listeners.BlockInteract;
 import Main.Listeners.Chat;
+import Main.Listeners.Lives;
 
 public class Main extends JavaPlugin {
 
@@ -19,6 +20,7 @@ public class Main extends JavaPlugin {
 		
 		getServer().getPluginManager().registerEvents(new Chat(), this);
 		getServer().getPluginManager().registerEvents(new BlockInteract(), this);
+		getServer().getPluginManager().registerEvents(new Lives(), this);
 		
 		System.out.println("WolkenPlugin> Enabled.");
 	}
