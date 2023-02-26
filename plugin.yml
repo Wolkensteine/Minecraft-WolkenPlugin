@@ -2,3 +2,15 @@ name: WolkenPlugin
 version: 0.1 (Beta)
 main: Main.Main
 author: Wolkensteine
+
+commands:
+   Chat:
+      description: Allows you to change who you are chatting with
+   City:
+      description: Allows you to create a city
+   Home:
+      description: Allows you to create your home
+   Party:
+      description: Allows you to create and manage a party
+   Team:
+      description: Allows you to create and manage a team with shared cities
