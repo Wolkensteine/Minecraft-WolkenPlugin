@@ -11,12 +11,18 @@ public class BlockInteract implements Listener {
 
 	@EventHandler
 	public void onBlockPlace(BlockPlaceEvent e) {
-		
+		// Get UUID and process it in city and home classes
+		// e.getPlayer().getUniqueId();
+		// Get the block and parse it to city and home classes
+		// e.getBlock();
 	}
 	
 	@EventHandler
 	public void onBlockBreak(BlockBreakEvent e) {
-		
+		// Get UUID and process it in city and home classes
+		// e.getPlayer().getUniqueId();
+		// Get the block and parse it to city and home classes
+		// e.getBlock();
 	}
 	
 	@EventHandler

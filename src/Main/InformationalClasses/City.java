@@ -4,24 +4,22 @@ import org.bukkit.block.Block;
 
 import Main.utils.Variables;
 
-public class Home {
+public class City {
 
-	public static String ownerN;
-	public static String oID;
+	public static Team ownerT;
 	public static int XLocationMidChunk;
 	public static int ZLocationMidChunk;
-	public static String homeWorldName;
+	public static String cityWorldName;
 	
-	public Home(String ownerName, String ownerID, int midLocationX, int midLocationZ, String worldName) {
-		ownerN = ownerName;
-		oID = ownerID;
+	public City(Team ownerTeam, int midLocationX, int midLocationZ, String worldName) {
+		ownerT = ownerTeam;
 		XLocationMidChunk = midLocationX;
 		ZLocationMidChunk = midLocationZ;
-		homeWorldName = worldName;
+		cityWorldName = worldName;
 	}
 	
-	public static boolean isPartOfHome(Block block) {
-		if (block.getChunk().getWorld().getName() != homeWorldName) {
+	public static boolean isPartOfCity(Block block) {
+		if (block.getChunk().getWorld().getName() != cityWorldName) {
 			return false;
 		}
 		boolean tmp = false;
@@ -48,7 +46,7 @@ public class Home {
 	}
 	
 	public static boolean isAllowed(String playerID) {
-		if (playerID == oID) {
+		if (ownerT.isMember(playerID)) {
 			return true;
 		} else {
 			return false;
